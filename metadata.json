@@ -1,0 +1,11 @@
+{
+  "name": "Remix تواصل 24 - Tawasol 24",
+  "description": "منصة تواصل 24 للمراسلة الفورية، المكالمات الصوتية، ومشاركة الوسائط والرسائل الصوتية بأرقام مخصصة وإدارة شاملة.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

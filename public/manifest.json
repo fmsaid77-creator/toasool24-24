@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "تواصل 24 - Tawasol 24",
+  "short_name": "تواصل 24",
+  "description": "منصة تواصل 24 للمراسلة الفورية، المكالمات الصوتية، ومشاركة الوسائط والرسائل الصوتية بأرقام مخصصة.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0f172a",
+  "background_color": "#0f172a",
+  "lang": "ar",
+  "dir": "rtl",
+  "categories": ["social", "communication"],
+  "icons": [
+    {
+      "src": "/assets/images/tawasol24_logo_badge_1791830208691.jpg",
+      "sizes": "192x192",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/images/tawasol24_logo_badge_1791830208691.jpg",
+      "sizes": "512x512",
+      "type": "image/jpeg",
+      "purpose": "any maskable"
+    }
+  ]
+}

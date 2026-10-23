@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>مركز تنزيل ملفات تواصل 24 - Tawasol 24</title>
+  <meta name="theme-color" content="#0f172a" />
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Cairo", "Segoe UI", Roboto, sans-serif;
+      background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+      color: #f8fafc;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+      text-align: center;
+    }
+    .card {
+      background: rgba(30, 41, 59, 0.85);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 28px;
+      padding: 36px 24px;
+      max-width: 480px;
+      width: 100%;
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.6);
+    }
+    .icon {
+      font-size: 52px;
+      margin-bottom: 12px;
+      display: inline-block;
+      animation: bounce 2s infinite;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-8px); }
+    }
+    h1 {
+      font-size: 22px;
+      font-weight: 800;
+      color: #38bdf8;
+      margin-bottom: 8px;
+    }
+    p {
+      font-size: 14px;
+      color: #94a3b8;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: white;
+      text-decoration: none;
+      padding: 16px 24px;
+      border-radius: 18px;
+      font-weight: 700;
+      font-size: 15px;
+      box-shadow: 0 10px 25px -5px rgba(37, 99, 235, 0.5);
+      transition: all 0.2s ease;
+      margin-bottom: 12px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 15px 30px -5px rgba(37, 99, 235, 0.6);
+      background: linear-gradient(135deg, #3b82f6, #2563eb);
+    }
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: #1e293b;
+      color: #cbd5e1;
+      text-decoration: none;
+      padding: 14px 20px;
+      border-radius: 16px;
+      font-weight: 600;
+      font-size: 13px;
+      border: 1px solid #334155;
+      transition: all 0.2s ease;
+      margin-bottom: 10px;
+    }
+    .btn-secondary:hover {
+      background: #334155;
+      color: white;
+    }
+    .details {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 16px;
+      padding: 16px;
+      margin-bottom: 24px;
+      text-align: right;
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    .details li {
+      margin-bottom: 6px;
+      list-style-position: inside;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 4px 12px;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      border: 1px solid rgba(16, 185, 129, 0.3);
+      border-radius: 9999px;
+      font-size: 11px;
+      font-weight: bold;
+      margin-bottom: 16px;
+    }
+    .footer-note {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="icon">📦</div>
+    <div class="status-badge">✅ تم تجهيز الحزمة بالكامل</div>
+    <h1>تحميل حزمة بناء تواصل 24</h1>
+    <p>الملف المضغوط جاهز للاستخدام ومناسب لجميع منصات الأندرويد و Kodular.</p>
+
+    <div class="details">
+      <div style="font-weight: bold; color: #38bdf8; margin-bottom: 8px;">محتويات الملف المضغوط:</div>
+      <ul style="padding-right: 10px; margin: 0;">
+        <li>ملف <strong>index.html</strong> الكامل الجاهز للتشغيل.</li>
+        <li>مجلد <strong>assets</strong> يحتوي كافة سكربتات JS وتنسيقات CSS.</li>
+        <li>أيقونات التطبيق وصور الواجهة وملف manifest.</li>
+      </ul>
+    </div>
+
+    <!-- Download Buttons -->
+    <a href="/downloads/tawasol24-build.zip" download="tawasol24-build.zip" class="btn-primary" id="mainDownloadBtn">
+      <span>⬇️ تحميل حزمة البناء كاملة (tawasol24-build.zip)</span>
+    </a>
+
+    <a href="/downloads/index-html-kodular.zip" download="index-html-kodular.zip" class="btn-secondary">
+      <span>📄 تحميل نسخة Kodular الخفيفة (index.html فقط)</span>
+    </a>
+
+    <a href="/downloads/tawasol24-complete-package.zip" download="tawasol24-complete-package.zip" class="btn-secondary">
+      <span>📁 تحميل الحزمة الشاملة مع السورس كود ودليل الأندرويد</span>
+    </a>
+
+    <div class="footer-note">
+      منصة تواصل 24 للمراسلة الفورية - Tawasol 24
+    </div>
+  </div>
+
+  <script>
+    // Auto-trigger download
+    window.addEventListener('DOMContentLoaded', function() {
+      setTimeout(function() {
+        var link = document.createElement('a');
+        link.href = '/downloads/tawasol24-build.zip';
+        link.download = 'tawasol24-build.zip';
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+      }, 700);
+    });
+  </script>
+</body>
+</html>
